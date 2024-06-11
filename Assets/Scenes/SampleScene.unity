@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.31453457, g: 0.55162674, b: 0.82192343, a: 1}
+  m_IndirectSpecularColor: {r: 0.31258652, g: 0.5502255, b: 0.82222056, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -787,6 +787,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91834231}
   m_CullTransparentMesh: 1
+--- !u!4 &100257217 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+  m_PrefabInstance: {fileID: 1922796383}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &128513415
 GameObject:
   m_ObjectHideFlags: 0
@@ -9050,6 +9055,7 @@ Transform:
   - {fileID: 1307655360}
   - {fileID: 1823426889}
   - {fileID: 941582946}
+  - {fileID: 100257217}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841128059
@@ -19151,6 +19157,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912946111}
   m_CullTransparentMesh: 1
+--- !u!1001 &1922796383
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 817075156}
+    m_Modifications:
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1491593
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00050008297
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.40113235
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238797
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000009636813
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268322
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000039916966
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448566855797330067, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098617634119162397, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
+      propertyPath: m_Name
+      value: Bow_Evil (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d4a9ec3d98a1e04fa2f3e1391eb2a15, type: 3}
 --- !u!1 &1941775764
 GameObject:
   m_ObjectHideFlags: 0
