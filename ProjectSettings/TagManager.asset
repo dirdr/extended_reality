@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - Arrow
+  - Cart
   layers:
   - Default
   - TransparentFX

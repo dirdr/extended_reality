@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3130029, g: 0.5501603, b: 0.8220557, a: 1}
+  m_IndirectSpecularColor: {r: 0.31453457, g: 0.55162674, b: 0.82192343, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -184,6 +184,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2b17b25807a3494187c3fad40049dbc, type: 3}
+--- !u!1 &497967373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9167975633396136063, guid: e4a6858d0a418104da1045e89220a206, type: 3}
+  m_PrefabInstance: {fileID: 1768836827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &497967374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7622231884244859358, guid: e4a6858d0a418104da1045e89220a206, type: 3}
+  m_PrefabInstance: {fileID: 1768836827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &497967376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497967373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b455b1aece04a2e478e1e4554eeac312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 6728693240332770418, guid: f902a461f04243a4d945f6a0878301fd, type: 3}
+  spawnInterval: 5
+  terrainTransform: {fileID: 497967374}
+  terrainWidth: 200
+  terrainLength: 200
 --- !u!1 &771123266
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,13 +237,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771123266}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26227146, y: -0, z: -0, w: 0.96499413}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.22000001, z: 0.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1703702647}
-  m_LocalEulerAnglesHint: {x: 30.41, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &771123268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +298,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -884,9 +911,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1703702647}
   - component: {fileID: 1703702646}
+  - component: {fileID: 1703702648}
   m_Layer: 0
   m_Name: Cart
-  m_TagString: Untagged
+  m_TagString: Cart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -923,6 +951,19 @@ Transform:
   - {fileID: 771123267}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1703702648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703702645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3767a68aefaacd9468664689745b0227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1001 &1768836827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -984,7 +1025,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7621157744677283730, guid: e4a6858d0a418104da1045e89220a206, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1645196460}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9167975633396136063, guid: e4a6858d0a418104da1045e89220a206, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 497967376}
   m_SourcePrefab: {fileID: 100100000, guid: e4a6858d0a418104da1045e89220a206, type: 3}
 --- !u!4 &1772067370 stripped
 Transform:
@@ -1066,7 +1110,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.1e-44, z: 1.6376e-41, w: 9.403955e-38}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.1e-44, z: 5.531e-42, w: 1.0403e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
