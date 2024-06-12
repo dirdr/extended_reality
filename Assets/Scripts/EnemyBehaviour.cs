@@ -8,12 +8,14 @@ public class EnemyBehavior : MonoBehaviour, IHittable
     public float attackCooldown = 2f; // Time between attacks
     public int attackDamage = 10;
     public int points = 100;
+    private Animator animator;
 
     [SerializeField] private Transform target;
     private float lastAttackTime;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         lastAttackTime = -attackCooldown;
         FindTarget(); // Find the target when the enemy spawns
     }
@@ -46,6 +48,7 @@ public class EnemyBehavior : MonoBehaviour, IHittable
 
     private void MoveTowardsTarget()
     {
+        animator.SetBool("isWalking", true);
         // Calculate the direction to the target
         Vector3 direction = (target.position - transform.position).normalized;
         // Move the enemy towards the target
@@ -57,6 +60,7 @@ public class EnemyBehavior : MonoBehaviour, IHittable
 
     private void AttackTarget()
     {
+        animator.SetBool("isAttacking", true);
         // Attack logic (e.g., reduce health of the cart)
         CartHealth cartHealth = target.GetComponent<CartHealth>();
         if (cartHealth != null)
