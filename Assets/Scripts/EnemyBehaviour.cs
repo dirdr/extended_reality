@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class EnemyBehavior : MonoBehaviour
+public class EnemyBehavior : MonoBehaviour, IHittable
 {
     [SerializeField] private string targetTag;
     public float attackRange = 2f; // Distance at which the enemy will attack
     public float moveSpeed = 2f; // Speed at which the enemy moves towards the target
     public float attackCooldown = 2f; // Time between attacks
-    public int attackDamage = 10; 
+    public int attackDamage = 10;
+    public int points = 100;
 
     [SerializeField] private Transform target;
     private float lastAttackTime;
@@ -64,5 +65,24 @@ public class EnemyBehavior : MonoBehaviour
         }
 
         lastAttackTime = Time.time;
+    }
+
+    public void GetHit()
+    {
+        // Logic when the enemy gets hit
+        Destroy(gameObject);
+        AddPoints(points);
+    }
+
+    private void AddPoints(int points)
+    {
+        if (PlayerScore.Instance != null)
+        {
+            PlayerScore.Instance.AddPoints(points);
+        }
+        else
+        {
+            Debug.LogError("PlayerScore instance not found!");
+        }
     }
 }
