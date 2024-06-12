@@ -63,8 +63,3 @@ public class MovingTarget : MonoBehaviour, IHittable
         }
     }
 }
-
-public interface IHittable
-{
-    void GetHit();
-}
