@@ -502,7 +502,7 @@
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "9693e25f-8a4f-4aed-842f-3961243c69a1",
+                    "id": "ff351dbd-053a-4feb-bb8e-d073c30cf553",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -556,7 +556,7 @@
                 },
                 {
                     "name": "",
-                    "id": "8e383b1a-270f-4c20-819b-89a59cffb498",
+                    "id": "7600f59b-a639-4c1e-af91-37a5b2a73948",
                     "path": "<XRController>{LeftHand}/Primary2DAxis",
                     "interactions": "",
                     "processors": "StickDeadzone",
@@ -1020,7 +1020,7 @@
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "00a4dc9f-1ee6-4349-b0e9-72d5dccaadd6",
+                    "id": "4fec3407-6e21-4869-bdcc-3b280c30916d",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
