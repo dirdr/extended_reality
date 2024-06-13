@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: f3392e95529ae7540ad53657e3d0ce7d, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 547de35aaaf3b45e9bd70663cb2acf5a, type: 2}
+      objectReference: {fileID: 9100000, guid: acf1ae7ed515c4b2a9b53260f1bc9765, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -142,4 +142,5 @@ MonoBehaviour:
   moveSpeed: 2
   attackCooldown: 2
   attackDamage: 10
+  points: 100
   target: {fileID: 0}
